@@ -1,0 +1,15 @@
+# Auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+
+# Bibliography
+*.bbl
+*.blg
+
+# Editor & Build tool files
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+.idea/
