@@ -10,6 +10,9 @@ RUN apt-get update -q && apt-get install -qy --no-install-recommends \
     texlive-fonts-extra \
     texlive-xetex \
     fonts-roboto \
+    fonts-roboto-slab \
     fonts-lato \
+    fontconfig \
     latexmk \
+    && fc-cache -f -v \
     && rm -rf /var/lib/apt/lists/*
