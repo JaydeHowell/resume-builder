@@ -1,33 +1,9 @@
-%%%%%%%%%%%%%%%%%
-% This is an sample CV template created using altacv.cls
-% (v1.7.4, 30 July 2025) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
-%
-%% It may be distributed and/or modified under the
-%% conditions of the LaTeX Project Public License, either version 1.3
-%% of this license or (at your option) any later version.
-%% The latest version of this license is in
-%%    http://www.latex-project.org/lppl.txt
-%% and version 1.3 or later is part of all distributions of LaTeX
-%% version 2003/12/01 or later.
-%%%%%%%%%%%%%%%%
-
-%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
-% \documentclass[10pt,a4paper,withhyper,normalphoto]{altacv}
-
 \documentclass[10pt,a4paper,withhyper]{altacv}
-%% AltaCV uses the fontawesome5 and simpleicons packages.
-%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
-
-% Change the page layout if you need to
+% Page Layout
 \geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
 
-% The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
 
-% Change the font if you want to, depending on whether
-% you're using pdflatex or xelatex/lualatex
-% WHEN COMPILING WITH XELATEX PLEASE USE
-% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex
 \iftutex
   % If using xelatex or lualatex:
   \setmainfont{JetBrains Mono}
@@ -41,7 +17,7 @@
   \renewcommand{\familydefault}{\sfdefault}
 \fi
 
-% Change the colours if you want to
+% Colors
 \definecolor{Charcoal}{HTML}{1f2833}
 \definecolor{BluishBlack}{HTML}{001725}
 \definecolor{DarkAmber}{HTML}{AC7311}
@@ -56,7 +32,7 @@
 \colorlet{emphasis}{Charcoal}
 \colorlet{body}{BluishBlack}
 
-% Change some fonts, if necessary
+% Fonts
 \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
 \renewcommand{\personalinfofont}{\footnotesize}
 \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
@@ -143,9 +119,8 @@
 
 \cvsection{Summary}
 
-\begin{quote}
-``Something smart or heartfelt, preferably in one sentence.''
-\end{quote}
+I am a math and physics-focused software engineer with a passion for space and robotics.
+I thrive when the problems are hard, and I'm eager to pour myself into the unsolved problems at the frontiers of technology
 
 \cvsection{Experience}
 
@@ -158,7 +133,7 @@
 
 \divider
 
-\cvevent{Systems Test Lead}{CapGemini America\\Q Analysts}{April 2015 -- May 2025}{Redmond, WA}
+\cvevent{Systems Test Lead}{CapGemini America\textbackslash{}Q Analysts}{April 2015 -- May 2025}{Redmond, WA}
 \begin{itemize}
 \item Led end-to-end testing for AR/VR and mesh networking platforms.
 \item Developed software for test automation and Hardware-in-the-loop simulations.
@@ -172,29 +147,22 @@
 \item Performed circuit board testing of prototype hardware using copper wire, multimeters, and thermal cameras.
 \end{itemize}
 
-\cvsection{Projects}
+\cvsection{Education}
 
-\cvevent{Project 1}{Funding agency/institution}{}{}
+\cvevent{B.S.\ in Computer Science}{Western Governor's University}{Expected Dec 2026}{}
+
+\cvevent{Relevant Coursework}{}{}{}
 \begin{itemize}
-\item Details
+\item Real Analysis
 \end{itemize}
 
-\divider
+% \divider
 
-\cvevent{Project 2}{Funding agency/institution}{Project duration}{}
-A short abstract would also work.
-
-% use ONLY \newpage if you want to force a page break for
-% ONLY the current column
 \newpage
 
-%% Switch to the right column. This will now automatically move to the second
-%% page if the content is too long.
 \switchcolumn
 
 \cvsection{Skills}
-
-% Don't overuse these \cvtag boxes — they're just eye-candies and not essential. If something doesn't fit on a single line, it probably works better as part of an itemized list (probably inlined itemized list), or just as a comma-separated list of strengths.
 
 \cvtag{C++}
 \cvtag{Python}
@@ -211,6 +179,19 @@ A short abstract would also work.
 \cvtag{Systems V\&V}
 \cvtag{HITL}
 
+
+\cvsection{Projects}
+
+\cvevent{Project 1}{Funding agency/institution}{}{}
+\begin{itemize}
+\item Details
+\end{itemize}
+
+\divider
+
+\cvevent{Project 2}{Funding agency/institution}{Project duration}{}
+A short abstract would also work.
+
 \cvsection{Most Proud of}
 
 \cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}
@@ -223,15 +204,7 @@ A short abstract would also work.
 
 \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
 
-%% Use \smallskip, \medskip,
-%% \bigskip, \vspace etc to make adjustments.
 \medskip
-
-\cvsection{Education}
-
-\cvevent{B.Sc.\ in Computer Science}{Western Governor's University}{Expected Dec 2026}{}
-
-% \divider
 
 \cvsection{Languages}
 
@@ -245,14 +218,13 @@ A short abstract would also work.
 
 \cvsection{References}
 
-% \cvref{name}{email}{mailing address}
-\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-{Address Line 1\\Address Line 2}
+\cvref{Ian Lane}{Anduril}{ilane@anduril.com}
+{10900 NE 4th St\\Bellevue, WA 98004}
 
 \divider
 
-\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
-{Address Line 1\\Address Line 2}
+\cvref{David Kuhta}{Honeywell}{david.kuhta@honeywell.com}
+{101 Constitution Ave NW \# 500W\\Washington, DC 20001}
 
 
 \end{paracol}
