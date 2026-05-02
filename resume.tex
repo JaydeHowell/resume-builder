@@ -39,82 +39,29 @@
 \renewcommand{\cvsubsectionfont}{\large\bfseries}
 
 
-% Change the bullets for itemize and rating marker
-% for \cvskill if you want to
 \renewcommand{\cvItemMarker}{{\small\textbullet}}
 \renewcommand{\cvRatingMarker}{\faCircle}
-% ...and the markers for the date/location for \cvevent
-% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
-% \renewcommand{\cvLocationMarker}{\faMapMarker*}
-
-
-% If your CV/résumé is in a language other than English,
-% then you probably want to change these so that when you
-% copy-paste from the PDF or run pdftotext, the location
-% and date marker icons for \cvevent will paste as correct
-% translations. For example Spanish:
-% \renewcommand{\locationname}{Ubicación}
-% \renewcommand{\datename}{Fecha}
-
-
-%% Use (and optionally edit if necessary) this .tex if you
-%% want to use an author-year reference style like APA(6)
-%% for your publication list
-% \input{pubs-authoryear}
-
-%% Use (and optionally edit if necessary) this .tex if you
-%% want an originally numerical reference style like IEEE
-
 
 \begin{document}
 \name{Jayde Howell}
 \tagline{Software Engineer}
-%% You can add multiple photos on the left or right
-% \photoR{2.8cm}{Globe_High}
-% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+\photoR{3.3cm}{JMHPortrait}
 
 \personalinfo{%
-  % Not all of these are required!
   \email{jayde.m.howell@gmail.com}
-  \phone{775-771-1275}
-  % \mailaddress{Åddrésş, Street, 00000 Cóuntry}
   \location{Seattle, WA}
-  %% \homepage{www.homepage.com}
-  % \twitter{@twitterhandle}
-  % \xtwitter{@x-handle}
   \linkedin{jaydehowell}
   \github{JaydeHowell}
-  % \orcid{0000-0000-0000-0000}
-  %% You can add your own arbitrary detail with
-  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
-  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+  \phone{775-771-1275}
 
-  %% Or you can declare your own field with
-  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
-  \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
-  % \gitlab{your_id}
-  %%
-  %% For services and platforms like Mastodon where there isn't a
-  %% straightforward relation between the user ID/nickname and the hyperlink,
-  %% you can use \printinfo directly e.g.
-  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
-  %% But if you absolutely want to create new dedicated info fields for
-  %% such platforms, then use \NewInfoField* with a star:
-  \NewInfoField*{mastodon}{\faMastodon}
-  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
-  %% the full hyperlink.
-  % \mastodon{@username@instance}{https://instance.url/@username}
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
 }
 
 \makecvheader
-%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
-% \AtBeginEnvironment{itemize}{\small}
 
-%% Set the left/right column width ratio to 6:4.
+%% Percent of left/right column ratio
 \columnratio{0.6}
 
-% Start a 2-column paracol. Both the left and right columns will automatically
-% break across pages if things get too long.
 \begin{paracol}{2}
 
 \cvsection{Summary}
@@ -151,12 +98,9 @@ I thrive when the problems are hard, and I'm eager to pour myself into the unsol
 
 \cvevent{B.S.\ in Computer Science}{Western Governor's University}{Expected Dec 2026}{}
 
-\cvevent{Relevant Coursework}{}{}{}
-\begin{itemize}
-\item Real Analysis
-\end{itemize}
-
-% \divider
+% \cvevent{Post-Baccalaureate}{North Seattle College}{}{}
+% \textbf{Math:} Calculus II\textbackslash{}III, Linear Algebra I\textbackslash{}II, Differential Equations\\
+% \textbf{Physics:} Physics I\textbackslash{}II, Statics, Signals \& Systems
 
 \newpage
 
@@ -182,29 +126,26 @@ I thrive when the problems are hard, and I'm eager to pour myself into the unsol
 
 \cvsection{Projects}
 
-\cvevent{Project 1}{Funding agency/institution}{}{}
+\cvevent{Budget Pipeline}{}{}{}
 \begin{itemize}
-\item Details
+\item Deterministic budget pipeline to track family budget across banks.
+\item Processes transaction data and tracks financial assets.
+\item Exposes a frontend interface to visualize financial data.
 \end{itemize}
 
-\divider
+% \divider
 
-\cvevent{Project 2}{Funding agency/institution}{Project duration}{}
-A short abstract would also work.
+% \cvevent{Project 2}{Institution}{Project duration}{}
 
-\cvsection{Most Proud of}
-
-\cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}
-
-\divider
-
-\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
-
-\divider
-
-\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
-
-\medskip
+% \cvsection{Achievements}
+%
+% \cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}
+%
+% \divider
+%
+% \cvachievement{\faHeartbeat}{Another achievement}{more details about it}
+%
+% \medskip
 
 \cvsection{Languages}
 
