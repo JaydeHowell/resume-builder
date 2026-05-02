@@ -103,7 +103,7 @@
   \phone{775-771-1275}
   % \mailaddress{Åddrésş, Street, 00000 Cóuntry}
   \location{Seattle, WA}
-  \homepage{www.homepage.com}
+  %% \homepage{www.homepage.com}
   % \twitter{@twitterhandle}
   % \xtwitter{@x-handle}
   \linkedin{jaydehowell}
@@ -140,20 +140,36 @@
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
 \begin{paracol}{2}
+
+\cvsection{Summary}
+
+\begin{quote}
+``Something smart or heartfelt, preferably in one sentence.''
+\end{quote}
+
 \cvsection{Experience}
 
 \cvevent{Software Engineer}{Sigma Design}{January 2026 -- Ongoing}{Redmond, WA}
 \begin{itemize}
-\item Develop software for automation and deployment of environments for rapid scaling of robotics operations, testing, and calibration.
+\item Develop automation software for rapid scaling of robotics operations, testing, and calibration.
 \item Debug and failure analysis of robotics software systems for engineering, operations, and autonomous Vision-Language Action uses.
+\item Software interaction with STM32 microcontroller units included OTP, EEPROM, and sensor data processing in a Zenoh pub/sub environment.
 \end{itemize}
 
 \divider
 
-\cvevent{QA Engineer}{CapGemini America}{September 2023 -- May 2025}{Redmond, WA}
+\cvevent{Systems Test Lead}{CapGemini America\\Q Analysts}{April 2015 -- May 2025}{Redmond, WA}
 \begin{itemize}
-\item Job description 1
-\item Job description 2
+\item Led end-to-end testing for AR/VR and mesh networking platforms.
+\item Developed software for test automation and Hardware-in-the-loop simulations.
+\end{itemize}
+
+\divider
+
+\cvevent{Systems Test Engineer}{HCL America}{September 2013 -- April 2015}{Redmond, WA}
+\begin{itemize}
+\item Conducted system-level integration and regression testing across HoloLens, Mixed Reality, and Xbox platforms.
+\item Performed circuit board testing of prototype hardware using copper wire, multimeters, and thermal cameras.
 \end{itemize}
 
 \cvsection{Projects}
@@ -168,21 +184,6 @@
 \cvevent{Project 2}{Funding agency/institution}{Project duration}{}
 A short abstract would also work.
 
-\medskip
-
-\cvsection{A Day of My Life}
-
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-\wheelchart{1.5cm}{0.5cm}{%
-  6/8em/accent!30/{Sleep,\\beautiful sleep},
-  3/8em/accent!40/Hopeful novelist by night,
-  8/8em/accent!60/Daytime job,
-  2/10em/accent/Sports and relaxation,
-  5/6em/accent!20/Spending time with family
-}
-
 % use ONLY \newpage if you want to force a page break for
 % ONLY the current column
 \newpage
@@ -191,11 +192,24 @@ A short abstract would also work.
 %% page if the content is too long.
 \switchcolumn
 
-\cvsection{My Life Philosophy}
+\cvsection{Skills}
 
-\begin{quote}
-``Something smart or heartfelt, preferably in one sentence.''
-\end{quote}
+% Don't overuse these \cvtag boxes — they're just eye-candies and not essential. If something doesn't fit on a single line, it probably works better as part of an itemized list (probably inlined itemized list), or just as a comma-separated list of strengths.
+
+\cvtag{C++}
+\cvtag{Python}
+\cvtag{C}\\
+\cvtag{STM32}
+\cvtag{RTOS}
+\cvtag{Linux}
+
+\divider\smallskip
+
+\cvtag{Linear Algebra}
+\cvtag{Kinematics}\\
+\cvtag{Integration}
+\cvtag{Systems V\&V}
+\cvtag{HITL}
 
 \cvsection{Most Proud of}
 
@@ -209,51 +223,27 @@ A short abstract would also work.
 
 \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
 
-\cvsection{Strengths}
+%% Use \smallskip, \medskip,
+%% \bigskip, \vspace etc to make adjustments.
+\medskip
 
-% Don't overuse these \cvtag boxes — they're just eye-candies and not essential. If something doesn't fit on a single line, it probably works better as part of an itemized list (probably inlined itemized list), or just as a comma-separated list of strengths.
+\cvsection{Education}
 
-\cvtag{Hard-working}
-\cvtag{Eye for detail}\\
-\cvtag{Motivator \& Leader}
+\cvevent{B.Sc.\ in Computer Science}{Western Governor's University}{Expected Dec 2026}{}
 
-\divider\smallskip
-
-\cvtag{C++}
-\cvtag{Embedded Systems}\\
-\cvtag{Statistical Analysis}
+% \divider
 
 \cvsection{Languages}
 
 \cvskill{English}{5}
 \divider
 
-\cvskill{Spanish}{4}
+\cvskill{Portuguese}{4}
 \divider
 
-\cvskill{German}{3.5} %% Supports X.5 values.
+\cvskill{German}{3}
 
-%% Yeah I didn't spend too much time making all the
-%% spacing consistent... sorry. Use \smallskip, \medskip,
-%% \bigskip, \vspace etc to make adjustments.
-\medskip
-
-\cvsection{Education}
-
-\cvevent{Ph.D.\ in Your Discipline}{Your University}{Sept 2002 -- June 2006}{}
-Thesis title: Wonderful Research
-
-\divider
-
-\cvevent{M.Sc.\ in Your Discipline}{Your University}{Sept 2001 -- June 2002}{}
-
-\divider
-
-\cvevent{B.Sc.\ in Your Discipline}{Stanford University}{Sept 1998 -- June 2001}{}
-
-% \divider
-
-\cvsection{Referees}
+\cvsection{References}
 
 % \cvref{name}{email}{mailing address}
 \cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
